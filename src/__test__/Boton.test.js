@@ -1,6 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Boton from "../componentes/Boton";
+import '@testing-library/jest-dom/extend-expect';
+
+
 
 test("Comprobar si el botón es un operador", () => {
   const { getByText } = render(<Boton>+</Boton>);
